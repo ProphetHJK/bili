@@ -2321,8 +2321,7 @@ def main(ip={}, menuInfo=None):
             if not ns:
                 print(lan['ERROR11'])  # 请使用-d <method>选择下载方式
                 return -1
-            #inp = input(lan['INPUT9'])  # 请输入你要下载的方式：\n1.当前弹幕下载\n2.全弹幕下载（可能需要大量时间）\n3.视频下载\n4.当前弹幕+视频下载\n5.全弹幕+视频下载\n6.仅字幕下载\n7.仅封面图片下载
-            inp = '3'
+            inp = input(lan['INPUT9'])  # 请输入你要下载的方式：\n1.当前弹幕下载\n2.全弹幕下载（可能需要大量时间）\n3.视频下载\n4.当前弹幕+视频下载\n5.全弹幕+视频下载\n6.仅字幕下载\n7.仅封面图片下载
             if inp[0].isnumeric() and int(inp[0]) > 0 and int(inp[0]) < 9:
                 cho2 = int(inp[0])
                 bs = False
@@ -2563,7 +2562,6 @@ def main(ip={}, menuInfo=None):
                 print(lan['ERROR11'])  # 请使用-d <method>选择下载方式
                 return -1
             inp = input(lan['INPUT12'])  # 请输入你要下载的方式：\n1.当前弹幕下载\n2.全弹幕下载（可能需要大量时间）\n3.视频下载\n4.当前弹幕+视频下载\n5.全弹幕+视频下载\n7.仅封面图片下载
-            #inp = '3'
             if inp[0].isnumeric() and ((int(inp[0]) > 0 and int(inp[0]) < 6) or int(inp[0]) == 7 or int(inp[0]) == 8):
                 cho2 = int(inp[0])
                 bs = False
